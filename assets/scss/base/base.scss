@@ -1,5 +1,10 @@
 @use '../utils/variables' as v;
 
-body{
-    background-color: v.$body-color;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: v.$grey-color;
 }

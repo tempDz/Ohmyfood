@@ -1,9 +1,9 @@
 
-//Importation des fonts
+//Importation des fonts===========================================================================================
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap');
 
-//déclarations police d'écriture
-//style police disponible : Thin 100, Light 300, Regular 400, Medium 500, Bold 700
+//déclarations police d'écriture==================================================================================
+//style police disponible : Thin 100, Light 300, Regular 400, Medium 500, Bold 700================================
 $text-font: 'Roboto', sans-serif;
 $headline-font: 'Shrikhand', cursive;
 $Thin:100;
@@ -12,7 +12,7 @@ $Regular:400;
 $Medium:500;
 $Bold:700;
 
-
+//spécification des éléments======================================================================================
 body {
     font-family: $text-font;
 }
@@ -23,4 +23,5 @@ h1 h2 {
 
 h2 {
     font-weight: $Bold;
+    font-size: 1.2em;
 }

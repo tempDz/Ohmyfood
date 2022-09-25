@@ -1,25 +1,15 @@
 @use './utils/variables' as v;
 @use './base/typography' as t;
 @use './base/base.scss';
+@use './utils/mixins' as m;
 
 
+.card {
+    @include m.plat;
+}
 
-.plat {
-    display: flex;
-    width: 80%;
-    border: 1px black solid;
-    background-color: v.$plat-background;
-    ;
-    
-    .plat__descriptif__title{
-      display: flex;
-      flex-direction: column;
-    }
-    .plat__descriptif__ingredient {
-        display: flex;
-        justify-content: space-between;
-    & p:nth-child(2) {
-        font-weight: t.$Bold;
-    }
-    }
-  }
+.text-reduction {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+}
