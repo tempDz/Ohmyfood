@@ -1,0 +1,5 @@
+@use './utils/variables' as v;
+
+h1{
+    font-family: v.$logo-title-font;
+}
