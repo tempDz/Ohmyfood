@@ -7,14 +7,14 @@
     display: flex;
     width: 80%;
     border: 1px black solid;
-    .plat__descriptif__nom{
+    .plat__heading {
       display: flex;
       flex-direction: column;
     }
-    .plat__descriptif__ingredient{
+    .plat__description{
         display: flex;
         justify-content: space-between;
-    &:nth-child(2){
+    &:nth-child(2) {
         font-weight: t.$Bold;
     }
     }

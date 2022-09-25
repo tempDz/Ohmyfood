@@ -16,15 +16,15 @@ h2 {
   width: 80%;
   border: 1px black solid;
 }
-.plat .plat__descriptif__nom {
+.plat .plat__heading {
   display: flex;
   flex-direction: column;
 }
-.plat .plat__descriptif__ingredient {
+.plat .plat__description {
   display: flex;
   justify-content: space-between;
 }
-.plat .plat__descriptif__ingredient:nth-child(2) {
+.plat .plat__description:nth-child(2) {
   font-weight: 700;
 }
 
