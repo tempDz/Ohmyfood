@@ -1,5 +1,19 @@
-h1 {
+h1 h2 {
   font-family: "Shrikhand", cursive;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+.plat {
+  display: flex;
+  width: 80%;
+  border: 1px black solid;
+}
+.plat .plat__descriptif {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
