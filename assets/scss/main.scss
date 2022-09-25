@@ -1,19 +1,21 @@
 @use './utils/variables' as v;
+@use './base/typography' as t;
 
-h1 h2{
-    font-family: v.$headline-font;
-}
 
-h2{
-    font-weight: v.$Bold;
-}
 
 .plat {
     display: flex;
     width: 80%;
     border: 1px black solid;
-    .plat__descriptif{
+    .plat__descriptif__nom{
       display: flex;
       flex-direction: column;
+    }
+    .plat__descriptif__ingredient{
+        display: flex;
+        justify-content: space-between;
+    &:nth-child(2){
+        font-weight: t.$Bold;
+    }
     }
   }

@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 h1 h2 {
   font-family: "Shrikhand", cursive;
 }
@@ -11,9 +16,16 @@ h2 {
   width: 80%;
   border: 1px black solid;
 }
-.plat .plat__descriptif {
+.plat .plat__descriptif__nom {
   display: flex;
   flex-direction: column;
+}
+.plat .plat__descriptif__ingredient {
+  display: flex;
+  justify-content: space-between;
+}
+.plat .plat__descriptif__ingredient:nth-child(2) {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
