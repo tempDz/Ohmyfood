@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "3eme projet Openclassrooms - site mobile d'un nouveau restaurant",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/scss/main.scss:./assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tempDz/Ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tempDz/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/tempDz/Ohmyfood#readme"
+}
