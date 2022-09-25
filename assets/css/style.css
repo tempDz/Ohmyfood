@@ -11,20 +11,25 @@ h2 {
   font-weight: 700;
 }
 
+body {
+  background-color: #f6f6f6;
+}
+
 .plat {
   display: flex;
   width: 80%;
   border: 1px black solid;
+  background-color: #ffffff;
 }
-.plat .plat__heading {
+.plat .plat__descriptif__title {
   display: flex;
   flex-direction: column;
 }
-.plat .plat__description {
+.plat .plat__descriptif__ingredient {
   display: flex;
   justify-content: space-between;
 }
-.plat .plat__description:nth-child(2) {
+.plat .plat__descriptif__ingredient p:nth-child(2) {
   font-weight: 700;
 }
 

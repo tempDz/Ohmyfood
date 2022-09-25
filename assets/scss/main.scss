@@ -1,5 +1,6 @@
 @use './utils/variables' as v;
 @use './base/typography' as t;
+@use './base/base.scss';
 
 
 
@@ -7,14 +8,17 @@
     display: flex;
     width: 80%;
     border: 1px black solid;
-    .plat__heading {
+    background-color: v.$plat-background;
+    ;
+    
+    .plat__descriptif__title{
       display: flex;
       flex-direction: column;
     }
-    .plat__description{
+    .plat__descriptif__ingredient {
         display: flex;
         justify-content: space-between;
-    &:nth-child(2) {
+    & p:nth-child(2) {
         font-weight: t.$Bold;
     }
     }
