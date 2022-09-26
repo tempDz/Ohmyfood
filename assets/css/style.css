@@ -3,45 +3,41 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-body {
-  background-color: #ffffff;
+  font-size: 62.5%;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #f6f6f6;
 }
 
 h1 h2 {
   font-family: "Shrikhand", cursive;
 }
 
-h2 {
-  font-weight: 700;
-  font-size: 1.2em;
-}
-
-.card {
+.sous-menu {
   display: flex;
-  flex-direction: column;
+  background-color: #fff;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 20px 20px;
   padding: 1rem;
 }
-.card__descriptif {
-  display: flex;
-  justify-content: space-between;
-}
-.card__descriptif p:nth-child(2) {
-  font-weight: 700;
-  padding-left: 0.5em;
-}
-
-.text-reduction {
+.sous-menu__header {
+  flex-grow: 2;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+.sous-menu__header h4, .sous-menu__header p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.sous-menu__prix {
+  display: flex;
+  align-items: flex-end;
+  font-weight: 700;
+  padding-left: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

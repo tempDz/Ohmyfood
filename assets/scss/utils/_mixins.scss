@@ -1,20 +1,33 @@
 @use '../utils/variables' as v;
 @use '../base/typography' as t;
 
+@mixin text-reduction {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
 @mixin plat {
     display: flex;
-    flex-direction: column;
+    background-color: v.$white-color;
     box-shadow: v.$box-shadow;
     border-radius: 20px 20px;
     padding: 1rem;
 
-    &__descriptif {
-      display: flex;
-      justify-content: space-between;
+    &__header{
+        flex-grow: 2;
+        @include text-reduction;
 
-      & p:nth-child(2) {
-        font-weight: t.$Bold;
-        padding-left: 0.5em;
-            }
+        & h4,p {
+          @include text-reduction;
         }
+
+      }
+    
+    &__prix {
+      display: flex;
+      align-items: flex-end;
+      font-weight: 700;
+      padding-left: 0.5rem;
+      }
     }

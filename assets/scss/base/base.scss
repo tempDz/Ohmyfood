@@ -1,10 +1,20 @@
 @use '../utils/variables' as v;
+@use '../base/typography' as t;
 
+
+//spécification des éléments et font==============================================================================
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-size: 62.5%;
 }
+
 body {
+    font-family: t.$text-font;
     background-color: v.$grey-color;
+}
+
+h1 h2 {
+    font-family: t.$headline-font;
 }

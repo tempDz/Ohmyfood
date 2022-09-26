@@ -12,16 +12,3 @@ $Regular:400;
 $Medium:500;
 $Bold:700;
 
-//spécification des éléments======================================================================================
-body {
-    font-family: $text-font;
-}
-
-h1 h2 {
-    font-family: $headline-font;
-}
-
-h2 {
-    font-weight: $Bold;
-    font-size: 1.2em;
-}

@@ -4,14 +4,6 @@
 @use './utils/mixins' as m;
 
 
-.card {
+.sous-menu {
     @include m.plat;
 }
-
-.text-reduction {
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-}
-
-
