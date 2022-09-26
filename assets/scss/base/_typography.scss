@@ -13,11 +13,10 @@ $Medium:500;
 $Bold:700;
 
 body {
-    // font-family: $text-font;
+    font-family: $text-font;
     background-color: v.$grey-color;
 }
 
-h1 h2 {
-    font-family: $headline-font;
+h1, h2 {
+    font-family: $headline-font
 }
-
