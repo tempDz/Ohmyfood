@@ -6,7 +6,6 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
   background-color: #f6f6f6;
 }
 
@@ -60,8 +59,12 @@ h1 h2 {
   border-radius: 100%;
 }
 
-.sous-menu__prix:hover + .sous-menu__check {
-  background-color: red;
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.menu h3 {
+  margin: 1.5rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

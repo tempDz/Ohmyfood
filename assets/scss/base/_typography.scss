@@ -1,4 +1,4 @@
-
+@use '../utils/variables' as v;
 //Importation des fonts===========================================================================================
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap');
 
@@ -11,4 +11,13 @@ $Light:300;
 $Regular:400;
 $Medium:500;
 $Bold:700;
+
+body {
+    // font-family: $text-font;
+    background-color: v.$grey-color;
+}
+
+h1 h2 {
+    font-family: $headline-font;
+}
 
