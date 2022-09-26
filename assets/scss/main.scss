@@ -7,3 +7,24 @@
 .sous-menu {
     @include m.plat;
 }
+
+.sous-menu__check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    background-color:  v.$tertiary-color;
+    border-radius: 0 20px 20px 0;
+}
+.fa-solid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.6rem;
+    width: 1.6rem;
+    color: v.$tertiary-color;
+    background-color: v.$white-color;
+    border-radius: 100%;
+
+}
