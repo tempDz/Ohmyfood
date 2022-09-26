@@ -16,6 +16,7 @@ h1 h2 {
 
 .sous-menu {
   display: flex;
+  cursor: pointer;
   background-color: #fff;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 20px 20px;
@@ -38,18 +39,17 @@ h1 h2 {
   font-weight: 700;
   padding-left: 0.5rem;
 }
-
 .sous-menu__check {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 4rem;
   width: 4rem;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
+  margin: -1em -1rem -1rem 1rem;
+  transition: margin 700ms;
 }
-
-.fa-solid {
+.sous-menu__check__i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,6 +58,10 @@ h1 h2 {
   color: #99E2D0;
   background-color: #fff;
   border-radius: 100%;
+}
+
+.sous-menu__prix:hover + .sous-menu__check {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

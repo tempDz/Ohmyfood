@@ -9,6 +9,7 @@
   
 @mixin plat {
     display: flex;
+    cursor: pointer;
     background-color: v.$white-color;
     box-shadow: v.$box-shadow;
     border-radius: 20px 20px;
@@ -21,7 +22,6 @@
         & h4,p {
           @include text-reduction;
         }
-
       }
     
     &__prix {
@@ -29,5 +29,27 @@
       align-items: flex-end;
       font-weight: 700;
       padding-left: 0.5rem;
+      }
+
+      &__check {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        background-color:  v.$tertiary-color;
+        border-radius: 0 20px 20px 0;
+        margin: -1em -1rem -1rem 1rem;
+        transition: margin 700ms;
+
+      &__i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 1.6rem;
+        width: 1.6rem;
+        color: v.$tertiary-color;
+        background-color: v.$white-color;
+        border-radius: 100%;    
+        }
       }
     }
