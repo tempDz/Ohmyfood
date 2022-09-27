@@ -1,15 +1,45 @@
 @use './base/base.scss';
 @use './utils/mixins' as m;
+@use './base/typography' as t;
+@use './utils/variables' as v;
 
 .sous-menu {
     @include m.plat;
 }
 
+.specialite {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+}
+
 .menu {
     display: flex;
     flex-direction: column  ;
+    margin: 0 1rem 1.25rem 1rem;
 
     & h3{
-        margin: 1.5rem 0;
+        font-weight: t.$Light;
+        margin: 1.5rem 0 1rem 1rem;
     }
+}
+
+.sous-menu__check {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        background-color:  v.$tertiary-color;
+        border-radius: 0 0.75rem 0.75rem 0;
+        margin: -1em -5rem -1rem 1rem;
+        visibility: hidden;
+        transition: margin 700ms;
+        
+}
+
+.sous-menu:hover > .sous-menu__check{
+    margin: -1em -1rem -1rem 1rem;
+    visibility: visible;
+
 }
