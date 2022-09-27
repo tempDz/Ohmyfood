@@ -3,6 +3,11 @@
 @use './base/typography' as t;
 @use './utils/variables' as v;
 
+.logo {
+    @include m.logo;
+      }
+
+
 .sous-menu {
     @include m.plat;
 }
@@ -33,13 +38,11 @@
         background-color:  v.$tertiary-color;
         border-radius: 0 0.75rem 0.75rem 0;
         margin: -1em -5rem -1rem 1rem;
-        visibility: hidden;
-        transition: margin 700ms;
+
+        transition: margin 500ms;
         
 }
 
 .sous-menu:hover > .sous-menu__check{
     margin: -1em -1rem -1rem 1rem;
-    visibility: visible;
-
 }

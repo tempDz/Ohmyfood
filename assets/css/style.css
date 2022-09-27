@@ -8,10 +8,22 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #f6f6f6;
+  padding: 0;
+  margin: 0;
 }
 
 h1, h2 {
   font-family: "Shrikhand", cursive;
+}
+
+.logo {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+}
+.logo h1 {
+  margin: 0;
+  text-align: center;
 }
 
 .sous-menu {
@@ -65,13 +77,11 @@ h1, h2 {
   background-color: #99E2D0;
   border-radius: 0 0.75rem 0.75rem 0;
   margin: -1em -5rem -1rem 1rem;
-  visibility: hidden;
-  transition: margin 700ms;
+  transition: margin 500ms;
 }
 
 .sous-menu:hover > .sous-menu__check {
   margin: -1em -1rem -1rem 1rem;
-  visibility: visible;
 }
 
 /*# sourceMappingURL=style.css.map */
