@@ -51,6 +51,30 @@ h1, h2 {
   display: flex;
   align-items: flex-end;
   font-weight: 700;
+  transition: 0.5s;
+}
+.sous-menu__check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  background-color: #99E2D0;
+  border-radius: 0 12px 12px 0;
+  margin: -1rem -5rem -1rem 1rem;
+  transition: 0.5s;
+}
+.sous-menu:hover .sous-menu__prix, .sous-menu:hover .sous-menu__check {
+  transform: translateX(-4rem);
+}
+.sous-menu__i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.6rem;
+  width: 1.6rem;
+  color: #99E2D0;
+  background-color: #fff;
+  border-radius: 100%;
 }
 
 .specialite {
@@ -68,21 +92,6 @@ h1, h2 {
 .menu h3 {
   font-weight: 300;
   margin: 1.5rem 0 1rem 1rem;
-}
-
-.sous-menu__check {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 4rem;
-  background-color: #99E2D0;
-  border-radius: 0 12px 12px 0;
-  margin: -1rem -5rem -1rem 1rem;
-  transition-duration: 0.5s;
-}
-
-.sous-menu:hover > .sous-menu__check {
-  margin: -1rem -1rem -1rem 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

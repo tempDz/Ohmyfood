@@ -42,27 +42,31 @@
       display: flex;
       align-items: flex-end;
       font-weight: 700;
+      transition: 0.5s;
       }
 
-      // &__check {
-      //   display: flex;
-      //   align-items: center;
-      //   justify-content: center;
-      //   width: 4rem;
-      //   background-color:  v.$tertiary-color;
-      //   border-radius: 0 20px 20px 0;
-      //   margin: -1em -1rem -1rem 1rem;
-      //   transition: margin 700ms;
+      &__check {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        background-color: v.$tertiary-color;
+        border-radius: 0 12px 12px 0;
+        margin: -1rem -5rem -1rem 1rem;
+        transition: 0.5s;
+      }
 
-      // &__i{
-      //   display: flex;
-      //   align-items: center;
-      //   justify-content: center;
-      //   height: 1.6rem;
-      //   width: 1.6rem;
-      //   color: v.$tertiary-color;
-      //   background-color: v.$white-color;
-      //   border-radius: 100%;    
-      //   }
-      // }
+      &:hover &__prix , &:hover &__check {
+        transform:translateX(-4rem);    
     }
+      &__i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 1.6rem;
+        width: 1.6rem;
+        color: v.$tertiary-color;
+        background-color: v.$white-color;
+        border-radius: 100%;    
+        }
+      }
