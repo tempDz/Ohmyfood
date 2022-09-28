@@ -31,9 +31,10 @@ h1, h2 {
   cursor: pointer;
   background-color: #fff;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-  border-radius: 0.75rem;
+  border-radius: 12px;
   padding: 1rem;
   margin: 0.5rem 0;
+  overflow: hidden;
 }
 .sous-menu__header {
   flex-grow: 2;
@@ -75,13 +76,13 @@ h1, h2 {
   justify-content: center;
   width: 4rem;
   background-color: #99E2D0;
-  border-radius: 0 0.75rem 0.75rem 0;
-  margin: -1em -5rem -1rem 1rem;
-  transition: margin 500ms;
+  border-radius: 0 12px 12px 0;
+  margin: -1rem -5rem -1rem 1rem;
+  transition-duration: 0.5s;
 }
 
 .sous-menu:hover > .sous-menu__check {
-  margin: -1em -1rem -1rem 1rem;
+  margin: -1rem -1rem -1rem 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

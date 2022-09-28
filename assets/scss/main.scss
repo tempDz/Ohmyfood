@@ -5,7 +5,7 @@
 
 .logo {
     @include m.logo;
-      }
+}
 
 
 .sous-menu {
@@ -21,28 +21,28 @@
 
 .menu {
     display: flex;
-    flex-direction: column  ;
+    flex-direction: column;
     margin: 0 1rem 1.25rem 1rem;
 
-    & h3{
+    & h3 {
         font-weight: t.$Light;
         margin: 1.5rem 0 1rem 1rem;
     }
 }
 
 .sous-menu__check {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 4rem;
-        background-color:  v.$tertiary-color;
-        border-radius: 0 0.75rem 0.75rem 0;
-        margin: -1em -5rem -1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    background-color: v.$tertiary-color;
+    border-radius: 0 12px 12px 0;
+    margin: -1rem -5rem -1rem 1rem;
 
-        transition: margin 500ms;
-        
+    transition-duration: 0.5s;
+
 }
 
-.sous-menu:hover > .sous-menu__check{
-    margin: -1em -1rem -1rem 1rem;
+.sous-menu:hover>.sous-menu__check {
+    margin: -1rem -1rem -1rem 1rem;
 }

@@ -24,9 +24,10 @@
     cursor: pointer;
     background-color: v.$white-color;
     box-shadow: v.$box-shadow;
-    border-radius: 0.75rem;
+    border-radius: 12px;
     padding: 1rem;
     margin: 0.5rem 0;
+    overflow: hidden;
 
     &__header{
         flex-grow: 2;
