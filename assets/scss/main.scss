@@ -1,4 +1,20 @@
 @use './base/base.scss';
-@use './utils/variables';
+@use './utils/variables' as v;
 @use './base/header';
 @use './pages/menu';
+
+.page-menu {
+    background-color: v.$grey-color;
+    border-radius: 40px 40px 0 0;
+    margin-top: -4rem;
+&__photo {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    max-width: 100%;
+    max-height: 656px;
+    object-fit: cover;
+    margin: 0;
+    z-index: -1;
+    }
+}
