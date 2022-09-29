@@ -6,14 +6,8 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: #f6f6f6;
   padding: 0;
   margin: 0;
-}
-
-h1, h2 {
-  font-family: "Shrikhand", cursive;
 }
 
 .logo {
@@ -24,6 +18,39 @@ h1, h2 {
 .logo h1 {
   margin: 0;
   text-align: center;
+}
+
+.text-reduction, .sous-menu__header, .sous-menu__header h4,
+.sous-menu__header p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f6f6f6;
+}
+
+h1, h2 {
+  font-family: "Shrikhand", cursive;
+}
+
+.specialite {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 2rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem 1.25rem 1rem;
+}
+.menu h3 {
+  font-weight: 300;
+  margin: 1.5rem 0 1rem 1rem;
 }
 
 .sous-menu {
@@ -38,14 +65,6 @@ h1, h2 {
 }
 .sous-menu__header {
   flex-grow: 2;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.sous-menu__header h4, .sous-menu__header p {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 .sous-menu__prix {
   display: flex;
@@ -66,7 +85,10 @@ h1, h2 {
 .sous-menu:hover .sous-menu__prix, .sous-menu:hover .sous-menu__check {
   transform: translateX(-4rem);
 }
-.sous-menu__i {
+.sous-menu:hover .sous-menu__check__i {
+  transform: rotateZ(0deg);
+}
+.sous-menu__check__i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,23 +97,8 @@ h1, h2 {
   color: #99E2D0;
   background-color: #fff;
   border-radius: 100%;
-}
-
-.specialite {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 1rem 2rem;
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  margin: 0 1rem 1.25rem 1rem;
-}
-.menu h3 {
-  font-weight: 300;
-  margin: 1.5rem 0 1rem 1rem;
+  transform: rotateZ(180deg);
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */

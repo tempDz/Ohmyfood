@@ -1,0 +1,85 @@
+@use '../utils/variables' as v;
+@use '../utils/extensions';
+@use '../base/typography' as t;
+
+//specialité==============================
+.specialite {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+}
+
+//menu====================================
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem 1.25rem 1rem;
+
+    & h3 {
+        font-weight: t.$Light;
+        margin: 1.5rem 0 1rem 1rem;
+    }
+}
+
+//sous-menu===============================
+.sous-menu {
+    display: flex;
+    cursor: pointer;
+    background-color: v.$white-color;
+    box-shadow: v.$box-shadow;
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    overflow: hidden;
+
+    &__header {
+        flex-grow: 2;
+        @extend .text-reduction;
+
+        & h4,
+        p {
+            @extend .text-reduction;
+        }
+    }
+
+    &__prix {
+        display: flex;
+        align-items: flex-end;
+        font-weight: 700;
+        transition: 0.5s;
+    }
+
+    &__check {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        background-color: v.$tertiary-color;
+        border-radius: 0 12px 12px 0;
+        margin: -1rem -5rem -1rem 1rem;
+        transition: 0.5s;
+    }
+
+    &:hover &__prix,
+    &:hover &__check {
+        transform: translateX(-4rem);
+    }
+
+    &:hover &__check__i {
+        transform: rotateZ(0deg);
+    }
+
+    &__check__i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 1.6rem;
+        width: 1.6rem;
+        color: v.$tertiary-color;
+        background-color: v.$white-color;
+        border-radius: 100%;
+        transform: rotateZ(180deg);
+        transition: 0.5s;
+    }
+}
