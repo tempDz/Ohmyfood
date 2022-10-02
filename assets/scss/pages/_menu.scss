@@ -2,6 +2,7 @@
 @use '../utils/extensions';
 @use '../base/typography' as t;
 
+//parametrage haut de page menu============
 .page-menu {
     background-color: v.$grey-color;
     border-radius: 40px 40px 0 0;
@@ -17,7 +18,7 @@
     }
 }
 
-//nom specialité==============================
+//nom specialité (ex : a la francaise)=====
 .specialite {
     display: flex;
     align-items: center;
@@ -25,7 +26,7 @@
     padding: 3rem 2rem 2rem 1rem;
 }
 
-//menu====================================
+//menu (entrées, plats et desserts)========
 .menu {
     display: flex;
     flex-direction: column;
@@ -47,6 +48,7 @@
 }
 
 //sous-menu===============================
+// parametrage des cards avec animations==
 .sous-menu {
     display: flex;
     cursor: pointer;
