@@ -1,0 +1,25 @@
+@use '../utils/variables' as v;
+@use '../base/typography' as t;
+
+.container-btn {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 8rem 0;
+&__commander{
+    font-family: t.$text-font;
+    color: v.$white-color;
+    background: linear-gradient(174deg, #ff79da 0%, #9356dc 100%);
+    padding: 16px 50px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.227) 0px 6px 14px 0px;
+    border-radius: 50px;
+    transition: 500ms;
+    cursor: pointer;
+    
+    
+    &:hover{
+    transition: 500ms;
+    box-shadow: rgba(0, 0, 0, 0.227) 0px 6px 14px 5px;
+        }
+    }
+}

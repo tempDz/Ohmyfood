@@ -32,7 +32,7 @@ body {
   background-color: #f6f6f6;
 }
 
-h1, h2, .headline {
+h1, h2, .headline, .btn {
   font-family: "Shrikhand", cursive;
 }
 
@@ -146,6 +146,27 @@ h1, h2, .headline {
 }
 .footer__ul i {
   width: 1.7rem;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 8rem 0;
+}
+.container-btn__commander {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background: linear-gradient(174deg, #ff79da 0%, #9356dc 100%);
+  padding: 16px 50px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.227) 0px 6px 14px 0px;
+  border-radius: 50px;
+  transition: 500ms;
+  cursor: pointer;
+}
+.container-btn__commander:hover {
+  transition: 500ms;
+  box-shadow: rgba(0, 0, 0, 0.227) 0px 6px 14px 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
