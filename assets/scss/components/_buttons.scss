@@ -4,7 +4,7 @@
 .container-btn {
     display: flex;
     justify-content: center;
-    margin: 2rem 0 8rem 0;
+    margin: 3rem 0 7rem 0;
 &__commander{
     font-family: t.$text-font;
     color: v.$white-color;
@@ -20,6 +20,7 @@
     &:hover{
     transition: 500ms;
     box-shadow: rgba(0, 0, 0, 0.227) 0px 6px 14px 5px;
+    filter: brightness(1.1);
         }
     }
 }
