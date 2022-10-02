@@ -125,19 +125,27 @@ h1, h2, .headline {
 
 .footer {
   background-color: #353535;
-  height: 10rem;
+  height: auto;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+.footer > h4 {
+  margin: 1rem 0 1rem 1rem;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 .footer ul {
   margin-top: 1rem;
 }
 .footer li {
-  padding: 0.3rem 1rem;
+  padding: 0.3rem 0;
   list-style-type: none;
   color: #fff;
   margin-left: 1rem;
 }
 .footer__ul i {
-  width: 2rem;
+  width: 1.7rem;
 }
 
 /*# sourceMappingURL=style.css.map */
