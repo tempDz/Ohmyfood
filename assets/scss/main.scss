@@ -2,3 +2,24 @@
 @use './utils/variables' as v;
 @use './base/header';
 @use './pages/menu';
+
+.footer {
+    background-color: v.$grey-color2;
+    height: 10rem;
+
+& ul {
+    margin-top: 1rem;
+}
+    
+& li{
+    padding: 0.3rem 1rem;
+    list-style-type: none;
+    color: v.$white-color;
+    margin-left: 1rem;
+}
+
+&__ul i{
+    width: 2rem;    
+}
+
+}

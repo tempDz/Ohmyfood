@@ -32,7 +32,7 @@ body {
   background-color: #f6f6f6;
 }
 
-h1, h2 {
+h1, h2, .headline {
   font-family: "Shrikhand", cursive;
 }
 
@@ -121,6 +121,23 @@ h1, h2 {
   border-radius: 100%;
   transform: rotateZ(180deg);
   transition: 0.5s;
+}
+
+.footer {
+  background-color: #353535;
+  height: 10rem;
+}
+.footer ul {
+  margin-top: 1rem;
+}
+.footer li {
+  padding: 0.3rem 1rem;
+  list-style-type: none;
+  color: #fff;
+  margin-left: 1rem;
+}
+.footer__ul i {
+  width: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
