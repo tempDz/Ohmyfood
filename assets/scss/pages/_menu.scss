@@ -2,12 +2,27 @@
 @use '../utils/extensions';
 @use '../base/typography' as t;
 
-//specialité==============================
+.page-menu {
+    background-color: v.$grey-color;
+    border-radius: 40px 40px 0 0;
+    margin-top: -4rem;
+&__photo {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    max-height: 656px;
+    object-fit: cover;
+    margin: 0;
+    z-index: -1;
+    }
+}
+
+//nom specialité==============================
 .specialite {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 3rem 2rem 2rem 1rem;
 }
 
 //menu====================================
@@ -19,6 +34,15 @@
     & h3 {
         font-weight: t.$Light;
         margin: 1.5rem 0 1rem 0.2rem;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 50px;
+        padding-top: 3px;
+        border-bottom: 3px solid #99e2d0;
+    }
+
     }
 }
 

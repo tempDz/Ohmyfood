@@ -36,11 +36,26 @@ h1, h2 {
   font-family: "Shrikhand", cursive;
 }
 
+.page-menu {
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  margin-top: -4rem;
+}
+.page-menu__photo {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  max-height: 656px;
+  object-fit: cover;
+  margin: 0;
+  z-index: -1;
+}
+
 .specialite {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 3rem 2rem 2rem 1rem;
 }
 
 .menu {
@@ -51,6 +66,13 @@ h1, h2 {
 .menu h3 {
   font-weight: 300;
   margin: 1.5rem 0 1rem 0.2rem;
+}
+.menu h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  padding-top: 3px;
+  border-bottom: 3px solid #99e2d0;
 }
 
 .sous-menu {
@@ -99,22 +121,6 @@ h1, h2 {
   border-radius: 100%;
   transform: rotateZ(180deg);
   transition: 0.5s;
-}
-
-.page-menu {
-  background-color: #f6f6f6;
-  border-radius: 40px 40px 0 0;
-  margin-top: -4rem;
-}
-.page-menu__photo {
-  position: relative;
-  z-index: -1;
-  width: 100%;
-  max-width: 100%;
-  max-height: 656px;
-  object-fit: cover;
-  margin: 0;
-  z-index: -1;
 }
 
 /*# sourceMappingURL=style.css.map */
