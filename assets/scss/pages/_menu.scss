@@ -1,16 +1,8 @@
 @use '../utils/variables' as v;
+@use '../components/animations';
 @use '../utils/extensions';
 @use '../base/typography' as t;
 
-
-@keyframes appartion{
-    from {
-        transform: translateY(-1rem);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
 
 
 //parametrage haut de page menu============
@@ -69,8 +61,10 @@
     padding: 1rem;
     margin: 0.5rem 0;
     overflow: hidden;
-    animation-name: appartion;
-    animation-duration: 3s;
+//animation apparition des sous menus
+    animation-name: sous-menu--appartion;
+    animation-duration: 600ms;
+    animation-timing-function:ease-in-out;
 
     &__header {
         flex-grow: 2;
