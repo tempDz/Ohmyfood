@@ -1,12 +1,18 @@
 @use '../utils/variables' as v;
 
-.logo {
+.logo-fleche {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     background-color: v.$white-color;
     padding: 1rem;
     box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+
+    & i {
+
+    }
   
     & h1 {
-        margin: 0;
-        text-align: center;
+        margin: 0 auto;
     }
   }

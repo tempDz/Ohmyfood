@@ -10,14 +10,16 @@ body {
   margin: 0;
 }
 
-.logo {
+.logo-fleche {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   background-color: #fff;
   padding: 1rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
 }
-.logo h1 {
-  margin: 0;
-  text-align: center;
+.logo-fleche h1 {
+  margin: 0 auto;
 }
 
 @keyframes sous-menu--appartion {
