@@ -2,6 +2,17 @@
 @use '../utils/extensions';
 @use '../base/typography' as t;
 
+
+@keyframes appartion{
+    from {
+        transform: translateY(-1rem);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
 //parametrage haut de page menu============
 .page-menu {
     background-color: v.$grey-color;
@@ -58,6 +69,8 @@
     padding: 1rem;
     margin: 0.5rem 0;
     overflow: hidden;
+    animation-name: appartion;
+    animation-duration: 3s;
 
     &__header {
         flex-grow: 2;
@@ -83,15 +96,18 @@
         width: 4rem;
         background-color: v.$tertiary-color;
         border-radius: 0 12px 12px 0;
+        //transition vers état normal
         margin: -1rem -5rem -1rem 1rem;
         transition: 0.5s;
     }
 
     &:hover &__check {
+        //transition vers état hover de du check
         margin-right: -1rem;
     }
 
     &:hover &__check__i {
+        //transition vers état hover de i
         transform: rotateZ(0deg);
     }
 

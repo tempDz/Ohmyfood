@@ -36,6 +36,14 @@ h1, h2, .headline, .btn {
   font-family: "Shrikhand", cursive;
 }
 
+@keyframes appartion {
+  from {
+    transform: translateY(-1rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 .page-menu {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
@@ -84,6 +92,8 @@ h1, h2, .headline, .btn {
   padding: 1rem;
   margin: 0.5rem 0;
   overflow: hidden;
+  animation-name: appartion;
+  animation-duration: 3s;
 }
 .sous-menu__header {
   flex-grow: 2;
