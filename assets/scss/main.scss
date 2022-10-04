@@ -1,7 +1,7 @@
 @use './base/base.scss';
 @use './utils/variables' as v;
 @use './base/header';
-@use './pages/menu';
-@use './base/footer';
 @use './components/buttons';
-
+@use './pages/menu';
+@use './pages/accueil';
+@use './base/footer';

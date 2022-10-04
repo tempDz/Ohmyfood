@@ -10,7 +10,7 @@ body {
   margin: 0;
 }
 
-.logo-fleche {
+.logo {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -18,8 +18,43 @@ body {
   padding: 1rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
 }
-.logo-fleche h1 {
+.logo i {
+  margin: 0 0.8rem 0 0.5rem;
+  color: black;
+}
+.logo h1 {
   margin: 0 auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f6f6f6;
+}
+
+h1, h2, .headline, .btn {
+  font-family: "Shrikhand", cursive;
+}
+
+.pink__button {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 7rem 0;
+}
+.pink__button__titre {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background: linear-gradient(174deg, #ff79da 0%, #9356dc 100%);
+  padding: 16px 50px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.227) 0px 6px 14px 0px;
+  border-radius: 50px;
+  transition: 500ms;
+  cursor: pointer;
+}
+.pink__button__titre:hover {
+  transition: 500ms;
+  box-shadow: rgba(0, 0, 0, 0.227) 0px 6px 14px 5px;
+  filter: brightness(1.1);
 }
 
 @keyframes sous-menu--appartion {
@@ -37,15 +72,6 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #f6f6f6;
-}
-
-h1, h2, .headline, .btn {
-  font-family: "Shrikhand", cursive;
 }
 
 .page-menu {
@@ -138,6 +164,11 @@ h1, h2, .headline, .btn {
   transition: 0.5s;
 }
 
+.accueil__localisation {
+  text-align: center;
+  margin: 2rem 0;
+}
+
 .footer {
   background-color: #353535;
   height: auto;
@@ -161,28 +192,6 @@ h1, h2, .headline, .btn {
 }
 .footer__ul i {
   width: 1.7rem;
-}
-
-.container-btn {
-  display: flex;
-  justify-content: center;
-  margin: 3rem 0 7rem 0;
-}
-.container-btn__commander {
-  font-family: "Roboto", sans-serif;
-  color: #fff;
-  background: linear-gradient(174deg, #ff79da 0%, #9356dc 100%);
-  padding: 16px 50px;
-  border: none;
-  box-shadow: rgba(0, 0, 0, 0.227) 0px 6px 14px 0px;
-  border-radius: 50px;
-  transition: 500ms;
-  cursor: pointer;
-}
-.container-btn__commander:hover {
-  transition: 500ms;
-  box-shadow: rgba(0, 0, 0, 0.227) 0px 6px 14px 5px;
-  filter: brightness(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */
