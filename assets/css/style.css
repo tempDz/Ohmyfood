@@ -10,21 +10,6 @@ body {
   margin: 0;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: #fff;
-  padding: 1rem;
-}
-.logo i {
-  margin: 0 0.8rem 0 0.5rem;
-  color: black;
-}
-.logo h1 {
-  margin: 0 auto;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   background-color: #f6f6f6;
@@ -53,6 +38,29 @@ h1, h2, .headline, .btn {
   transition: 500ms;
   box-shadow: rgba(0, 0, 0, 0.227) 0px 6px 14px 5px;
   filter: brightness(1.1);
+}
+
+.accueil__fonctionnement__card {
+  width: 200px;
+  height: 80px;
+  border-radius: 54px;
+  background: #ffffff;
+  box-shadow: 8px 8px 16px #cacaca, -8px -8px 16px #f6f6f6;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+  padding: 1rem;
+}
+.logo i {
+  margin: 0 0.8rem 0 0.5rem;
+  color: black;
+}
+.logo h1 {
+  margin: 0 auto;
 }
 
 @keyframes sous-menu--appartion {
@@ -171,6 +179,9 @@ header {
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }
 
+.accueil h2 {
+  font-family: "Roboto", sans-serif;
+}
 .accueil__localisation {
   background-color: #f3f3f3;
   display: flex;
@@ -189,16 +200,15 @@ header {
   text-align: center;
   padding: 2rem;
 }
-.accueil__reservation h2 {
-  font-family: "Roboto", sans-serif;
-}
 .accueil__reservation p {
   padding-top: 1.5rem;
   font-weight: 400;
 }
 .accueil__fonctionnement {
-  height: 200px;
   background-color: #fff;
+}
+.accueil__fonctionnement h2 {
+  padding-top: 3rem;
 }
 
 .pink__button {

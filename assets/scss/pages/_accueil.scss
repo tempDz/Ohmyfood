@@ -1,12 +1,18 @@
 @use '../utils/variables' as v;
 @use '../base/typography' as t;
 
+//reglage pour box shadow dans header==============================================
 header {
     position: relative;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }
 
+//mise en page du haut de l'accueil================================================
 .accueil {
+
+    & h2 {
+        font-family: t.$text-font;
+    }
 
     &__localisation {
         background-color: v.$grey-color3;
@@ -29,10 +35,6 @@ header {
         text-align: center;
         padding: 2rem;
 
-        & h2 {
-            font-family: t.$text-font;
-
-        }
 
         & p {
             padding-top: 1.5rem;
@@ -41,14 +43,17 @@ header {
     }
 
     &__fonctionnement {
-        height: 200px;
         background-color: v.$white-color;
+
+    & h2 {
+        padding-top: 3rem;
+    }
     }
 
 }
 
-//parametre de bouton dans _buttons.scss
-//modification uniquement du margin
+//parametre de bouton dans _buttons.scss================================
+//modification uniquement du margin=====================================
 .pink__button {
     margin: 2rem 0 2rem 0;
 }
