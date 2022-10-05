@@ -38,7 +38,6 @@ h1, h2, .headline, .btn {
 .pink__button {
   display: flex;
   justify-content: center;
-  margin: 3rem 0 7rem 0;
 }
 .pink__button__titre {
   font-family: "Roboto", sans-serif;
@@ -164,18 +163,38 @@ h1, h2, .headline, .btn {
   transition: 0.5s;
 }
 
+.pink__button {
+  margin: 3rem 0 7rem 0;
+}
+
 .accueil__localisation {
+  background-color: #eaeaea;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem 0;
+  padding: 1.5rem 0;
 }
 .accueil__localisation i {
-  padding-right: 2rem;
+  padding-right: 1.5rem;
+}
+.accueil__localisation h3 {
+  font-size: 1rem;
+}
+.accueil__reservation {
+  margin: 3rem auto;
+  text-align: center;
+  padding: 0 2rem;
+}
+.accueil__reservation p {
+  padding-top: 1rem;
+}
+
+.pink__button {
+  margin: 2rem 0 2rem 0;
 }
 
 .footer {
-  background-color: #353535;
+  background-color: #eaeaea;
   height: auto;
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;

@@ -1,13 +1,37 @@
 @use '../utils/variables' as v;
 @use '../base/typography';
 
-.accueil__localisation {
+.accueil {
+
+&__localisation {
+    background-color: v.$grey-color2;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem 0;
+    padding: 1.5rem 0;
 
 & i {
-    padding-right: 2rem;
+    padding-right: 1.5rem;
     }
+
+& h3 {
+    font-size: 1rem;    
+    }
+}
+&__reservation {
+    margin: 3rem auto;
+    text-align: center;
+    padding: 0 2rem;
+
+& p {
+    padding-top: 1rem;
+}
+    }
+
+}
+
+//parametre de bouton dans _buttons.scss
+//modification uniquement du margin
+.pink__button {
+    margin: 2rem 0 2rem 0;
 }
