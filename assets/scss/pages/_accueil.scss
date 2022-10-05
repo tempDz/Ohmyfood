@@ -2,6 +2,12 @@
 @use '../base/typography';
 
 .accueil__localisation {
-    text-align: center;
-    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0;
+
+& i {
+    padding-right: 2rem;
+    }
 }
