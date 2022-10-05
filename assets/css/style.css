@@ -16,7 +16,6 @@ body {
   justify-content: flex-start;
   background-color: #fff;
   padding: 1rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
 }
 .logo i {
   margin: 0 0.8rem 0 0.5rem;
@@ -116,7 +115,7 @@ h1, h2, .headline, .btn {
   display: flex;
   cursor: pointer;
   background-color: #fff;
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
   border-radius: 12px;
   padding: 1rem;
   margin: 0.5rem 0;
@@ -167,8 +166,13 @@ h1, h2, .headline, .btn {
   margin: 3rem 0 7rem 0;
 }
 
+header {
+  position: relative;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
 .accueil__localisation {
-  background-color: #eaeaea;
+  background-color: #f3f3f3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,12 +185,20 @@ h1, h2, .headline, .btn {
   font-size: 1rem;
 }
 .accueil__reservation {
-  margin: 3rem auto;
+  background-color: #fafafa;
   text-align: center;
-  padding: 0 2rem;
+  padding: 2rem;
+}
+.accueil__reservation h2 {
+  font-family: "Roboto", sans-serif;
 }
 .accueil__reservation p {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
+  font-weight: 400;
+}
+.accueil__fonctionnement {
+  height: 200px;
+  background-color: #fff;
 }
 
 .pink__button {
@@ -194,7 +206,7 @@ h1, h2, .headline, .btn {
 }
 
 .footer {
-  background-color: #eaeaea;
+  background-color: #353535;
   height: auto;
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;

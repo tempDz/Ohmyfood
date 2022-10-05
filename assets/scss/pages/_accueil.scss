@@ -1,31 +1,48 @@
 @use '../utils/variables' as v;
-@use '../base/typography';
+@use '../base/typography' as t;
+
+header {
+    position: relative;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
 
 .accueil {
 
-&__localisation {
-    background-color: v.$grey-color2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem 0;
+    &__localisation {
+        background-color: v.$grey-color3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem 0;
 
-& i {
-    padding-right: 1.5rem;
+        & i {
+            padding-right: 1.5rem;
+        }
+
+        & h3 {
+            font-size: 1rem;
+        }
     }
 
-& h3 {
-    font-size: 1rem;    
-    }
-}
-&__reservation {
-    margin: 3rem auto;
-    text-align: center;
-    padding: 0 2rem;
+    &__reservation {
+        background-color: v.$grey-color4;
+        text-align: center;
+        padding: 2rem;
 
-& p {
-    padding-top: 1rem;
-}
+        & h2 {
+            font-family: t.$text-font;
+
+        }
+
+        & p {
+            padding-top: 1.5rem;
+            font-weight: t.$Regular;
+        }
+    }
+
+    &__fonctionnement {
+        height: 200px;
+        background-color: v.$white-color;
     }
 
 }
