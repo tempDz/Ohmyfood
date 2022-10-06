@@ -7,23 +7,26 @@
     padding: 1.5rem;
     margin: 0 0 1rem 0.7rem;
     border-radius: 20px;
-    background: #ffffff;
+    background: v.$grey-color;
     box-shadow:  8px 8px 16px #cacaca,-8px -8px 16px #f6f6f6;
 
 & p {
     color: v.$white-color;
     display: flex;
+    position: relative;
     margin-left: -33px;
     background-color: v.$primary-color;
-    height: 1.5rem;
-    width: 1.5rem;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
     border-radius: 100%;
     justify-content: center;
     align-items: center;
+    object-fit: contain;
 }
 
 & i {
     padding: 0 2rem 0 1rem;
+    color: lighten(v.$grey-color2, 25%);
 }
 
 }
