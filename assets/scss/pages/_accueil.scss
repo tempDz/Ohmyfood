@@ -2,7 +2,7 @@
 @use '../base/typography' as t;
 
 //reglage pour box shadow dans header==============================================
-header {
+.logo {
     position: relative;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }
@@ -68,7 +68,7 @@ header {
                 display: flex;
                 position: relative;
                 margin-left: -33px;
-                background-color: v.$primary-color;
+                background-color: v.$violet-color;
                 min-height: 1.5rem;
                 min-width: 1.5rem;
                 border-radius: 100%;
@@ -84,8 +84,58 @@ header {
 
         }
     }
-
-
+    //parametre des cartes des resturant=================================================
+    &__restaurant {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    
+        & h2 {
+            padding: 3rem 0 2rem 0;
+            font-family: t.$text-font;
+    
+        }
+    
+        &__card {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            background-color: aqua;
+            border-radius: 20px;
+            background-color: v.$white-color;
+            margin-bottom: 1.5rem;
+            box-shadow: v.$box-shadow2;
+    
+        & span {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.5rem 0.8rem;
+            border-radius: 5%;
+            background-color: v.$green-color;
+            color: v.$green-color2;
+        }
+    
+            & img {
+                height: 13rem;
+                width: 100%;
+                border: 0px transparent solid;
+                border-radius: 20px 20px 0 0;
+                object-fit: cover;
+            }
+    
+            &__texte {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: v.$white-color;
+                padding: 1rem 2rem 1rem 1rem;
+                border-radius: 0 0 20px 20px;
+    
+            }
+    
+        }
+    }
 
 }
 

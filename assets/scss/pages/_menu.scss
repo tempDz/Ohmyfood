@@ -38,7 +38,7 @@
     & h3 {
         font-weight: t.$Light;
         margin: 1.5rem 0 1rem 0.2rem;
-
+//petite barre verte sous le titre
     &::after {
         content: "";
         display: block;
@@ -62,6 +62,7 @@
     margin: 0.5rem 0;
     overflow: hidden;
 //animation apparition des sous menus
+//reglage des animations dans animations.scss
     animation-name: sous-menu--appartion;
     animation-duration: 600ms;
     animation-timing-function:ease-in-out;
@@ -72,7 +73,7 @@
 
         & h4,
         p {
-            @extend .text-reduction;
+        @extend .text-reduction;
         }
     }
 
@@ -88,7 +89,7 @@
         align-items: center;
         justify-content: center;
         width: 4rem;
-        background-color: v.$tertiary-color;
+        background-color: v.$green-color;
         border-radius: 0 12px 12px 0;
         //transition vers état normal
         margin: -1rem -5rem -1rem 1rem;
@@ -111,7 +112,7 @@
         justify-content: center;
         height: 1.6rem;
         width: 1.6rem;
-        color: v.$tertiary-color;
+        color: v.$green-color;
         background-color: v.$white-color;
         border-radius: 100%;
         transform: rotateZ(180deg);
