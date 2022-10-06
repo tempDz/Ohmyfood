@@ -44,9 +44,11 @@ header {
 
     &__fonctionnement {
         background-color: v.$white-color;
+        padding: 1rem;
 
     & h2 {
         padding-top: 3rem;
+        margin-bottom: 2rem;
     }
     }
 

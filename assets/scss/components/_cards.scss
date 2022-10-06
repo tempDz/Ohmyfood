@@ -1,7 +1,29 @@
+@use '../utils/variables' as v;
+
 .accueil__fonctionnement__card {
-    width: 200px;
-    height: 80px;
-    border-radius: 54px;
+    height: auto;
+    display: flex;
+    align-items:center;
+    padding: 1.5rem;
+    margin: 0 0 1rem 0.7rem;
+    border-radius: 20px;
     background: #ffffff;
     box-shadow:  8px 8px 16px #cacaca,-8px -8px 16px #f6f6f6;
+
+& p {
+    color: v.$white-color;
+    display: flex;
+    margin-left: -33px;
+    background-color: v.$primary-color;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+& i {
+    padding: 0 2rem 0 1rem;
+}
+
 }
