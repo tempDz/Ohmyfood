@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
@@ -40,32 +41,27 @@ h1, h2, .headline, .btn {
   filter: brightness(1.1);
 }
 
-.accueil__fonctionnement__card {
-  height: auto;
+.BoxActiviteCardPart {
   display: flex;
-  align-items: center;
-  padding: 1.5rem;
-  margin: 0 0 1rem 0.7rem;
-  border-radius: 20px;
-  background: #f6f6f6;
-  box-shadow: 8px 8px 16px #cacaca, -8px -8px 16px #f6f6f6;
+  flex: 1;
+  justify-content: space-between;
 }
-.accueil__fonctionnement__card p {
-  color: #fff;
+
+.une {
+  margin-right: 20px;
+}
+
+.BoxActivite h3 {
+  font-size: 25px;
+}
+
+/* parametrage du bloc Card du bloc activité */
+.BoxActiviteCard {
   display: flex;
-  position: relative;
-  margin-left: -33px;
-  background-color: #9356DC;
-  min-height: 1.5rem;
-  min-width: 1.5rem;
-  border-radius: 100%;
-  justify-content: center;
-  align-items: center;
-  object-fit: contain;
-}
-.accueil__fonctionnement__card i {
-  padding: 0 2rem 0 1rem;
-  color: #757575;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-top: 30px;
+  justify-content: space-between;
 }
 
 .logo {
@@ -226,11 +222,38 @@ header {
 }
 .accueil__fonctionnement {
   background-color: #fff;
-  padding: 1rem;
+  padding: 1rem 1rem 3rem 1rem;
 }
 .accueil__fonctionnement h2 {
   padding-top: 2rem;
   margin-bottom: 2rem;
+}
+.accueil__fonctionnement__card {
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  margin: 0 0 1rem 0.7rem;
+  border-radius: 20px;
+  background: #f6f6f6;
+  box-shadow: 8px 8px 16px #cacaca, -8px -8px 16px #f6f6f6;
+}
+.accueil__fonctionnement__card p {
+  color: #fff;
+  display: flex;
+  position: relative;
+  margin-left: -33px;
+  background-color: #9356DC;
+  min-height: 1.5rem;
+  min-width: 1.5rem;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+.accueil__fonctionnement__card i {
+  padding: 0 2rem 0 1rem;
+  color: #757575;
 }
 
 .pink__button {

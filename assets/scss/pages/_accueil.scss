@@ -30,6 +30,7 @@ header {
         }
     }
 
+    //le boutton reservation est alimenté par buttons.scss==========================
     &__reservation {
         background-color: v.$grey-color4;
         text-align: center;
@@ -44,13 +45,47 @@ header {
 
     &__fonctionnement {
         background-color: v.$white-color;
-        padding: 1rem;
+        padding: 1rem 1rem 3rem 1rem;
 
-    & h2 {
-        padding-top: 2rem;
-        margin-bottom: 2rem;
+        & h2 {
+            padding-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        //pamametre des cartes fonctionnement==========
+        &__card {
+            height: auto;
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+            margin: 0 0 1rem 0.7rem;
+            border-radius: 20px;
+            background: v.$grey-color;
+            box-shadow: 8px 8px 16px #cacaca, -8px -8px 16px #f6f6f6;
+
+            & p {
+                color: v.$white-color;
+                display: flex;
+                position: relative;
+                margin-left: -33px;
+                background-color: v.$primary-color;
+                min-height: 1.5rem;
+                min-width: 1.5rem;
+                border-radius: 100%;
+                justify-content: center;
+                align-items: center;
+                object-fit: contain;
+            }
+
+            & i {
+                padding: 0 2rem 0 1rem;
+                color: lighten(v.$grey-color2, 25%);
+            }
+
+        }
     }
-    }
+
+
 
 }
 

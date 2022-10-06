@@ -1,32 +1,24 @@
 @use '../utils/variables' as v;
 
-.accueil__fonctionnement__card {
-    height: auto;
+//parametre des cartes des resturant==================
+.BoxActiviteCardPart{
     display: flex;
-    align-items:center;
-    padding: 1.5rem;
-    margin: 0 0 1rem 0.7rem;
-    border-radius: 20px;
-    background: v.$grey-color;
-    box-shadow:  8px 8px 16px #cacaca,-8px -8px 16px #f6f6f6;
+    flex: 1;
+    justify-content: space-between;
+}
 
-& p {
-    color: v.$white-color;
+.une{
+    margin-right: 20px;
+}
+
+.BoxActivite h3{
+    font-size: 25px;
+}
+ /* parametrage du bloc Card du bloc activité */
+ .BoxActiviteCard{
     display: flex;
-    position: relative;
-    margin-left: -33px;
-    background-color: v.$primary-color;
-    min-height: 1.5rem;
-    min-width: 1.5rem;
-    border-radius: 100%;
-    justify-content: center;
-    align-items: center;
-    object-fit: contain;
-}
-
-& i {
-    padding: 0 2rem 0 1rem;
-    color: lighten(v.$grey-color2, 25%);
-}
-
-}
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-top: 30px;
+    justify-content: space-between;
+ }
