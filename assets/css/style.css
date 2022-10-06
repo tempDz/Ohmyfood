@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
@@ -41,27 +40,35 @@ h1, h2, .headline, .btn {
   filter: brightness(1.1);
 }
 
-.BoxActiviteCardPart {
+.accueil__restaurant {
   display: flex;
-  flex: 1;
-  justify-content: space-between;
+  flex-direction: column;
+  padding: 1rem;
 }
-
-.une {
-  margin-right: 20px;
+.accueil__restaurant h2 {
+  padding: 3rem 0 2rem 0;
+  font-family: "Roboto", sans-serif;
 }
-
-.BoxActivite h3 {
-  font-size: 25px;
+.accueil__restaurant__card {
+  width: 100%;
+  overflow: hidden;
+  background-color: aqua;
+  border-radius: 20px;
+  background-color: #fff;
+  margin-bottom: 1.5rem;
+  box-shadow: 8px 8px 16px #cacaca, -8px -8px 16px #f6f6f6;
 }
-
-/* parametrage du bloc Card du bloc activité */
-.BoxActiviteCard {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  margin-top: 30px;
-  justify-content: space-between;
+.accueil__restaurant__card img {
+  height: 13rem;
+  width: 100%;
+  border: 0px transparent solid;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+.accueil__restaurant__card__texte {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0 0 20px 20px;
 }
 
 .logo {

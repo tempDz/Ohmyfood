@@ -1,24 +1,40 @@
 @use '../utils/variables' as v;
+@use '../base/typography' as t;
 
 //parametre des cartes des resturant==================
-.BoxActiviteCardPart{
+.accueil__restaurant{
     display: flex;
-    flex: 1;
-    justify-content: space-between;
+    flex-direction: column;
+    padding: 1rem;
+
+    & h2 {
+        padding: 3rem 0 2rem 0;
+        font-family: t.$text-font;
+
+    }
+
+&__card {
+    width: 100%;    
+    overflow: hidden;
+    background-color: aqua;
+    border-radius: 20px;
+    background-color: v.$white-color;
+    margin-bottom: 1.5rem;
+    box-shadow: v.$box-shadow2;
+
+& img {
+    height: 13rem;
+    width: 100%;
+    border: 0px transparent solid;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 
-.une{
-    margin-right: 20px;
+&__texte {
+    background-color: v.$white-color;
+    padding: 1rem;
+    border-radius: 0 0 20px 20px;
 }
 
-.BoxActivite h3{
-    font-size: 25px;
 }
- /* parametrage du bloc Card du bloc activité */
- .BoxActiviteCard{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    margin-top: 30px;
-    justify-content: space-between;
- }
+}

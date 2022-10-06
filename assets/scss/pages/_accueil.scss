@@ -61,7 +61,7 @@ header {
             margin: 0 0 1rem 0.7rem;
             border-radius: 20px;
             background: v.$grey-color;
-            box-shadow: 8px 8px 16px #cacaca, -8px -8px 16px #f6f6f6;
+            box-shadow: v.$box-shadow2;
 
             & p {
                 color: v.$white-color;
