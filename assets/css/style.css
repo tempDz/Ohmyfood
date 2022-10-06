@@ -50,6 +50,7 @@ h1, h2, .headline, .btn {
   font-family: "Roboto", sans-serif;
 }
 .accueil__restaurant__card {
+  position: relative;
   width: 100%;
   overflow: hidden;
   background-color: aqua;
@@ -57,6 +58,11 @@ h1, h2, .headline, .btn {
   background-color: #fff;
   margin-bottom: 1.5rem;
   box-shadow: 8px 8px 16px #cacaca, -8px -8px 16px #f6f6f6;
+}
+.accueil__restaurant__card span {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 .accueil__restaurant__card img {
   height: 13rem;
@@ -66,8 +72,11 @@ h1, h2, .headline, .btn {
   object-fit: cover;
 }
 .accueil__restaurant__card__texte {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #fff;
-  padding: 1rem;
+  padding: 1rem 2rem 1rem 1rem;
   border-radius: 0 0 20px 20px;
 }
 

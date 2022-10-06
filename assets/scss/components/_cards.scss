@@ -2,7 +2,7 @@
 @use '../base/typography' as t;
 
 //parametre des cartes des resturant==================
-.accueil__restaurant{
+.accueil__restaurant {
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -13,28 +13,38 @@
 
     }
 
-&__card {
-    width: 100%;    
-    overflow: hidden;
-    background-color: aqua;
-    border-radius: 20px;
-    background-color: v.$white-color;
-    margin-bottom: 1.5rem;
-    box-shadow: v.$box-shadow2;
+    &__card {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        background-color: aqua;
+        border-radius: 20px;
+        background-color: v.$white-color;
+        margin-bottom: 1.5rem;
+        box-shadow: v.$box-shadow2;
 
-& img {
-    height: 13rem;
-    width: 100%;
-    border: 0px transparent solid;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-}
+    & span {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
 
-&__texte {
-    background-color: v.$white-color;
-    padding: 1rem;
-    border-radius: 0 0 20px 20px;
-}
+        & img {
+            height: 13rem;
+            width: 100%;
+            border: 0px transparent solid;
+            border-radius: 20px 20px 0 0;
+            object-fit: cover;
+        }
 
-}
+        &__texte {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: v.$white-color;
+            padding: 1rem 2rem 1rem 1rem;
+            border-radius: 0 0 20px 20px;
+        }
+
+    }
 }
