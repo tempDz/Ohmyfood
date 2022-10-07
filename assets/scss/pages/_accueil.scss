@@ -63,6 +63,10 @@
             background: v.$grey-color;
             box-shadow: v.$box-shadow2;
 
+            &:nth-child(4) {
+                background-color: lighten(v.$violet-color, 30%);
+            }
+
             & p {
                 color: v.$white-color;
                 display: flex;
@@ -80,22 +84,27 @@
             & i {
                 padding: 0 2rem 0 1rem;
                 color: lighten(v.$grey-color2, 25%);
+
             }
 
+            .fa-store {
+                color: v.$violet-color;
+            }
         }
     }
-    //parametre des cartes des resturant=================================================
+
+    //parametre des cartes vers lien resturant===================
     &__restaurant {
         display: flex;
         flex-direction: column;
         padding: 1rem;
-    
+
         & h2 {
             padding: 3rem 0 2rem 0;
             font-family: t.$text-font;
-    
+
         }
-    
+
         &__card {
             position: relative;
             width: 100%;
@@ -105,17 +114,18 @@
             background-color: v.$white-color;
             margin-bottom: 1.5rem;
             box-shadow: v.$box-shadow2;
-    
-        & span {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            padding: 0.5rem 0.8rem;
-            border-radius: 5%;
-            background-color: v.$green-color;
-            color: v.$green-color2;
-        }
-    
+
+            & span {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                padding: 0.5rem 1.5rem;
+                border-radius: 5%;
+                background-color: v.$green-color;
+                color: v.$green-color2;
+                font-weight: bold;
+            }
+
             & img {
                 height: 13rem;
                 width: 100%;
@@ -123,7 +133,7 @@
                 border-radius: 20px 20px 0 0;
                 object-fit: cover;
             }
-    
+
             &__texte {
                 display: flex;
                 align-items: center;
@@ -132,9 +142,32 @@
                 padding: 1rem 2rem 1rem 1rem;
                 border-radius: 0 0 20px 20px;
 
+                //flex contenant les 2 coeurs========================
+                &__heart {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    //le coeur plein est transparent=====================
+                    & i:nth-child(1) {
+                        opacity: (0);
+                    }
+
+                    //le coeur le plein apparait avec la couleur=========
+                    &:hover i:nth-child(1) {
+                        opacity: (1);
+                        -webkit-background-clip: text;
+                        color: transparent;
+                        line-height: 32px;
+                        background: linear-gradient(#e66465, #9198e5);
+                    }
+
+                    //le coeur le vide disparait au survol=========
+                    &:hover i:nth-child(2) {
+                        opacity: (0);
+                    }
+                }
             }
-    
         }
     }
-
 }

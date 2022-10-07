@@ -254,6 +254,9 @@ a {
   background: #f6f6f6;
   box-shadow: 8px 8px 16px #cacaca, -8px -8px 16px #f6f6f6;
 }
+.accueil__fonctionnement__card:nth-child(4) {
+  background-color: #e4d5f6;
+}
 .accueil__fonctionnement__card p {
   color: #fff;
   display: flex;
@@ -270,6 +273,9 @@ a {
 .accueil__fonctionnement__card i {
   padding: 0 2rem 0 1rem;
   color: #757575;
+}
+.accueil__fonctionnement__card .fa-store {
+  color: #9356DC;
 }
 .accueil__restaurant {
   display: flex;
@@ -294,10 +300,11 @@ a {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  padding: 0.5rem 0.8rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 5%;
   background-color: #99E2D0;
   color: #008766;
+  font-weight: bold;
 }
 .accueil__restaurant__card img {
   height: 13rem;
@@ -313,6 +320,24 @@ a {
   background-color: #fff;
   padding: 1rem 2rem 1rem 1rem;
   border-radius: 0 0 20px 20px;
+}
+.accueil__restaurant__card__texte__heart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.accueil__restaurant__card__texte__heart i:nth-child(1) {
+  opacity: 0;
+}
+.accueil__restaurant__card__texte__heart:hover i:nth-child(1) {
+  opacity: 1;
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 32px;
+  background: linear-gradient(#e66465, #9198e5);
+}
+.accueil__restaurant__card__texte__heart:hover i:nth-child(2) {
+  opacity: 0;
 }
 
 .footer {
