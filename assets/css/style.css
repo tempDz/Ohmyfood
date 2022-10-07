@@ -163,6 +163,8 @@ a {
   animation-name: sous-menu--appartion;
   animation-duration: 600ms;
   animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 1s;
 }
 .sous-menu__header {
   flex-grow: 2;

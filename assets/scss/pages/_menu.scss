@@ -66,6 +66,8 @@
     animation-name: sous-menu--appartion;
     animation-duration: 600ms;
     animation-timing-function:ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 1s;
 
     &__header {
         flex-grow: 2;
