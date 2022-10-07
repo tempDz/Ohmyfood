@@ -1,5 +1,5 @@
-
-//animation des sous menus===========
+@use '../utils/variables' as v;
+//animation des sous menus=====================
 @keyframes sous-menu--appartion{
     from {
         transform: translateY(2rem);
@@ -8,5 +8,30 @@
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+//animation loader===============================
+@keyframes loader {
+    0% {
+        letter-spacing:1em;
+        filter:blur(12px);
+        opacity:0;
+    }
+    100% {
+        filter:blur(0);
+        opacity:1;
+    }
+}
+
+//animation loader image=========================
+@keyframes headshake {
+    25% {
+        // entièrement à droite
+        transform: translateX(v.$shake-intensity) ;
+    }
+    75% {
+        // entièrement à gauche
+        transform: translateX(v.$shake-intensity * -1) ;
     }
 }

@@ -1,0 +1,30 @@
+@use '../components/animations' as k;
+@use '../utils/variables' as v;
+@use '../base/typography' as t;
+
+.boite-animation{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+
+&__titre {
+    font-size: 5rem;
+    font-family: t.$headline-font;
+    color: v.$grey-color2;
+    animation: loader 3.2s ease 0s 1 normal none;
+    transform-origin: 50% 50%;
+}
+
+& img {
+    height: 4rem;
+    padding: 0 1rem;
+    animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) ;
+    animation-delay: 3s;
+    color: v.$pink-color;
+}
+}
