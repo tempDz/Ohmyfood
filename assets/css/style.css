@@ -77,6 +77,20 @@ h1, h2, .headline, .btn {
     opacity: 1;
   }
 }
+@keyframes anim-titre {
+  0% {
+    color: #FF79DA;
+    text-shadow: 0 0 7px #FF79DA;
+  }
+  90% {
+    color: #353535;
+    text-shadow: none;
+  }
+  100% {
+    color: #FF79DA;
+    text-shadow: 0 0 7px #FF79DA;
+  }
+}
 @keyframes headshake {
   25% {
     transform: translateX(5%);
@@ -324,28 +338,84 @@ h1, h2, .headline, .btn {
   width: 1.7rem;
 }
 
-.boite-animation {
-  position: fixed;
+.loader__titre {
+  position: absolute;
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-}
-.boite-animation__titre {
-  font-size: 5rem;
+  align-items: center;
+  font-size: 3rem;
   font-family: "Shrikhand", cursive;
   color: #353535;
   animation: loader 3.2s ease 0s 1 normal none;
-  transform-origin: 50% 50%;
 }
-.boite-animation img {
-  height: 4rem;
-  padding: 0 1rem;
-  animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9);
-  animation-delay: 3s;
-  color: #FF79DA;
+.loader__titre__lettre {
+  counter-reset: #FF79DA;
+  animation: anim-titre 1.2s linear infinite;
+}
+.loader__objet {
+  display: flex;
+}
+
+.loader__titre__lettre:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.loader__titre__lettre:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader__titre__lettre:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.loader__titre__lettre:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.loader__titre__lettre:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.loader__titre__lettre:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.loader__titre__lettre:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.loader__titre__lettre:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+.loader__titre__lettre:nth-child(9) {
+  animation-delay: 0.9s;
+}
+
+#Layer_1 {
+  height: 70px;
+  width: 70px;
+  padding: 1rem;
+}
+
+#Layer_2 {
+  height: 70px;
+  width: 70px;
+  padding: 1rem;
+}
+
+#Layer_3 {
+  height: 70px;
+  width: 70px;
+  padding: 1rem;
+}
+
+#Layer_4 {
+  height: 70px;
+  width: 70px;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

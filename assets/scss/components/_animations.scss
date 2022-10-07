@@ -23,6 +23,22 @@
         opacity:1;
     }
 }
+//animation loader couleur titre=================
+@keyframes anim-titre {
+    0% {
+        color: v.$pink-color;
+        text-shadow: 0 0 7px v.$pink-color;
+    }
+    90% {
+        color: v.$grey-color2;
+        text-shadow: none;
+
+    }
+    100% {
+        color: v.$pink-color;
+        text-shadow: 0 0 7px v.$pink-color;
+    }
+}
 
 //animation loader image=========================
 @keyframes headshake {

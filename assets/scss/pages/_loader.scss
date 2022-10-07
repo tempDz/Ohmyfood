@@ -2,29 +2,44 @@
 @use '../utils/variables' as v;
 @use '../base/typography' as t;
 
-.boite-animation{
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
- 
+.loader {
+    &__titre {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        font-family: t.$headline-font;
+        color: v.$grey-color2;
+        animation: loader 3.2s ease 0s 1 normal none;
 
-&__titre {
-    font-size: 5rem;
-    font-family: t.$headline-font;
-    color: v.$grey-color2;
-    animation: loader 3.2s ease 0s 1 normal none;
-    transform-origin: 50% 50%;
+        &__lettre {
+            counter-reset: v.$pink-color;
+            animation: anim-titre 1.2s linear infinite;
+
+
+        }
+    }
+
+    &__objet {
+        display: flex;
+    }
+
 }
 
-& img {
-    height: 4rem;
-    padding: 0 1rem;
-    animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) ;
-    animation-delay: 3s;
-    color: v.$pink-color;
+
+@for $i from 1 to 10 {
+    .loader__titre__lettre:nth-child(#{$i}) {
+        animation-delay: $i * 0.1s;
+    }
 }
+
+@for $i from 1 to 5 {
+    #Layer_#{$i} {
+        height: 70px;
+        width: 70px;
+        padding: 1rem;
+    }
 }
