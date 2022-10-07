@@ -330,15 +330,20 @@ a {
   line-height: 0;
   transform: scale(0);
   transition-duration: 0.5s;
-  background: -webkit-linear-gradient(174deg, #ff79da 0%, #9356dc 100%);
+  line-height: 30px;
+  background: linear-gradient(174deg, #ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.accueil__restaurant__card__texte__heart i:nth-child(2) {
+  position: absolute;
+  transition-duration: 0.5s;
+  transform: scale(1);
 }
 .accueil__restaurant__card__texte__heart:hover i:nth-child(1) {
   transition-duration: 0.5s;
   transform: scale(1);
   line-height: 30px;
-  background: -webkit-linear-gradient(174deg, #ff79da 0%, #9356dc 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .accueil__restaurant__card__texte__heart:hover i:nth-child(2) {
   position: absolute;
