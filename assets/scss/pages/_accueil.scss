@@ -131,13 +131,21 @@
                 background-color: v.$white-color;
                 padding: 1rem 2rem 1rem 1rem;
                 border-radius: 0 0 20px 20px;
-    
+
             }
     
         }
     }
 
 }
+
+#Outline {
+    height: 30px;
+    width: 30px;
+    color: pink;
+
+}
+
 
 //parametre de bouton dans _buttons.scss================================
 //modification uniquement du margin=====================================

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
@@ -18,6 +19,11 @@ body {
 
 h1, h2, .headline, .btn {
   font-family: "Shrikhand", cursive;
+}
+
+a {
+  text-decoration: none; /*Pour que le lien ne soit plus "souligné"...*/
+  color: black;
 }
 
 .pink__button {
@@ -307,6 +313,12 @@ h1, h2, .headline, .btn {
   background-color: #fff;
   padding: 1rem 2rem 1rem 1rem;
   border-radius: 0 0 20px 20px;
+}
+
+#Outline {
+  height: 30px;
+  width: 30px;
+  color: pink;
 }
 
 .pink__button {

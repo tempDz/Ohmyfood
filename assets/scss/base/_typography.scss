@@ -21,3 +21,8 @@ body {
 h1, h2, .headline, .btn {
     font-family: $headline-font
 }
+
+a{
+    text-decoration: none;/*Pour que le lien ne soit plus "souligné"...*/
+    color: black;
+}
