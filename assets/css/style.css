@@ -315,16 +315,6 @@ a {
   border-radius: 0 0 20px 20px;
 }
 
-#Outline {
-  height: 30px;
-  width: 30px;
-  color: pink;
-}
-
-.pink__button {
-  margin: 2rem 0 2rem 0;
-}
-
 .footer {
   background-color: #353535;
   height: auto;
