@@ -1,6 +1,12 @@
 @use '../utils/variables' as v;
 @use '../base/typography' as t;
 
+//reglage padding du boutton pink==================================================
+//le reste du règlage se trouve dans buttons.scss
+.pink__button {
+    margin: 3rem;
+}
+
 //reglage pour box shadow dans header==============================================
 .logo {
     position: relative;

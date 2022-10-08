@@ -247,6 +247,10 @@ a {
   margin: 3rem 0 7rem 0;
 }
 
+.pink__button {
+  margin: 3rem;
+}
+
 .logo {
   position: relative;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
@@ -419,21 +423,37 @@ a {
   width: 1.7rem;
 }
 
-.loader__titre {
-  position: absolute;
-  height: 100%;
-  width: 100%;
+.loader {
+  background-color: #fff;
+  position: fixed;
+  inset: 0;
+  z-index: 10;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+.loader__titre {
+  display: flex;
   font-size: 3rem;
   font-family: "Shrikhand", cursive;
   color: #353535;
-  animation: loader 3.2s ease 0s 1 normal none;
+  animation: loader 0.7s ease 0s 1 normal none;
 }
 .loader__titre__lettre {
   counter-reset: #FF79DA;
   animation: anim-titre 1.2s linear infinite;
+  padding-bottom: 2rem;
+}
+.loader__objet {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+svg {
+  height: 30px;
+  width: 30px;
 }
 
 .loader__titre__lettre:nth-child(1) {
