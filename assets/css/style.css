@@ -99,10 +99,10 @@ a {
 }
 @keyframes disparition-loader {
   0% {
-    opacity: 1;
+    visibility: visible;
   }
   100% {
-    opacity: 0;
+    visibility: hidden;
   }
 }
 .text-reduction, .sous-menu__header, .sous-menu__header h4,
@@ -433,7 +433,7 @@ a {
   align-items: center;
   justify-content: center;
   animation-name: disparition-loader;
-  animation-duration: 2s;
+  animation-duration: 0.5s;
   animation-delay: 3s;
   animation-fill-mode: both;
 }
