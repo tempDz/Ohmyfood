@@ -164,7 +164,6 @@ a {
   animation-duration: 600ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
-  animation-delay: 1s;
 }
 .sous-menu__header {
   flex-grow: 2;
@@ -202,6 +201,42 @@ a {
   border-radius: 100%;
   transform: rotateZ(180deg);
   transition: 0.5s;
+}
+
+.delay1 {
+  animation-delay: 0.2s;
+}
+
+.delay2 {
+  animation-delay: 0.4s;
+}
+
+.delay3 {
+  animation-delay: 0.6s;
+}
+
+.delay4 {
+  animation-delay: 0.8s;
+}
+
+.delay5 {
+  animation-delay: 1s;
+}
+
+.delay6 {
+  animation-delay: 1.2s;
+}
+
+.delay7 {
+  animation-delay: 1.4s;
+}
+
+.delay8 {
+  animation-delay: 1.6s;
+}
+
+.delay9 {
+  animation-delay: 1.8s;
 }
 
 .pink__button {
@@ -394,9 +429,6 @@ a {
   counter-reset: #FF79DA;
   animation: anim-titre 1.2s linear infinite;
 }
-.loader__objet {
-  display: flex;
-}
 
 .loader__titre__lettre:nth-child(1) {
   animation-delay: 0.1s;
@@ -432,30 +464,6 @@ a {
 
 .loader__titre__lettre:nth-child(9) {
   animation-delay: 0.9s;
-}
-
-#Layer_1 {
-  height: 70px;
-  width: 70px;
-  padding: 1rem;
-}
-
-#Layer_2 {
-  height: 70px;
-  width: 70px;
-  padding: 1rem;
-}
-
-#Layer_3 {
-  height: 70px;
-  width: 70px;
-  padding: 1rem;
-}
-
-#Layer_4 {
-  height: 70px;
-  width: 70px;
-  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

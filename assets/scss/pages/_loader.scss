@@ -22,24 +22,11 @@
 
         }
     }
-
-    &__objet {
-        display: flex;
-    }
-
 }
 
 
 @for $i from 1 to 10 {
     .loader__titre__lettre:nth-child(#{$i}) {
         animation-delay: $i * 0.1s;
-    }
-}
-
-@for $i from 1 to 5 {
-    #Layer_#{$i} {
-        height: 70px;
-        width: 70px;
-        padding: 1rem;
     }
 }

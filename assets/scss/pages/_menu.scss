@@ -67,7 +67,6 @@
     animation-duration: 600ms;
     animation-timing-function:ease-in-out;
     animation-fill-mode: both;
-    animation-delay: 1s;
 
     &__header {
         flex-grow: 2;
@@ -121,6 +120,11 @@
         transition: 0.5s;
     }
 }
+@for $i from 1 to 10 {
+    .delay#{$i}{
+        animation-delay: $i * 0.2s;
+    }
+    }
 
 //parametre de bouton dans _buttons.scss
 //modification uniquement du margin
