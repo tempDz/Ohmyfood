@@ -120,7 +120,7 @@
         transition: 0.5s;
     }
 }
-@for $i from 1 to 10 {
+@for $i from 1 to 11 {
     .delay#{$i}{
         animation-delay: $i * 0.2s;
     }

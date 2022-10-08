@@ -239,6 +239,10 @@ a {
   animation-delay: 1.8s;
 }
 
+.delay10 {
+  animation-delay: 2s;
+}
+
 .pink__button {
   margin: 3rem 0 7rem 0;
 }
