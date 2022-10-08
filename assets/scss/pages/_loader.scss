@@ -1,4 +1,4 @@
-@use '../components/animations' as k;
+@use '../components/animations';
 @use '../utils/variables' as v;
 @use '../base/typography' as t;
 
@@ -11,6 +11,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation-name: disparition-loader;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
 
     &__titre {
         display: flex;

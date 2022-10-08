@@ -40,14 +40,12 @@
     }
 }
 
-//animation loader objet=========================
-@keyframes headshake {
-    25% {
-        // entièrement à droite
-        transform: translateX(v.$shake-intensity) ;
+//disparition du loader==========================
+@keyframes disparition-loader {
+    0% {
+        opacity: 1;
     }
-    75% {
-        // entièrement à gauche
-        transform: translateX(v.$shake-intensity * -1) ;
+    100% {
+        opacity: 0;
     }
 }

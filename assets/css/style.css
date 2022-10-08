@@ -97,12 +97,12 @@ a {
     text-shadow: 0 0 7px #FF79DA;
   }
 }
-@keyframes headshake {
-  25% {
-    transform: translateX(5%);
+@keyframes disparition-loader {
+  0% {
+    opacity: 1;
   }
-  75% {
-    transform: translateX(-5%);
+  100% {
+    opacity: 0;
   }
 }
 .text-reduction, .sous-menu__header, .sous-menu__header h4,
@@ -432,6 +432,10 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  animation-name: disparition-loader;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
 }
 .loader__titre {
   display: flex;
