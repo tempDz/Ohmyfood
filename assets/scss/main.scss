@@ -1,6 +1,7 @@
 @use './base/base.scss';
 @use './utils/variables';
 @use './components/buttons';
+@use './utils/mixins';
 @use './base/header';
 @use './pages/menu';
 @use './pages/accueil';

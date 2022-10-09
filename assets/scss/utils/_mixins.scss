@@ -1,2 +1,15 @@
 @use '../utils/variables' as v;
 @use '../base/typography' as t;
+
+//parametre media queries =====================
+@mixin tablet-screen {
+    @media screen and (min-width: v.$breakpoints-tablet) {
+        @content;
+    }
+}
+
+@mixin pc-screen {
+    @media screen and (min-width: v.$breakpoints-pc) {
+        @content;
+    }
+}

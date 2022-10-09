@@ -1,5 +1,6 @@
 @use '../utils/variables' as v;
 @use '../base/typography' as t;
+@use '../utils/mixins' as m;
 
 //reglage padding du boutton pink==================================================
 //le reste du règlage se trouve dans buttons.scss
@@ -104,6 +105,9 @@
         display: flex;
         flex-direction: column;
         padding: 1rem;
+        @include m.pc-screen {
+            align-items: center;
+        }
 
         & h2 {
             padding: 3rem 0 2rem 0;
@@ -120,6 +124,10 @@
             background-color: v.$white-color;
             margin-bottom: 1.5rem;
             box-shadow: v.$box-shadow2;
+            @include m.pc-screen {
+                margin: 1rem;
+                max-width: 620px;
+            }
 
             & span {
                 position: absolute;
@@ -161,7 +169,7 @@
                         transition-duration: 0.5s;
                         line-height: 30px;
                         background: linear-gradient(174deg, #ff79da 0%, #9356dc 100%);
-                        -webkit-background-clip: text;
+                        background-clip: text;
                         -webkit-text-fill-color: transparent;
                     }
                     & i:nth-child(2) {
@@ -189,5 +197,17 @@
                 }
             }
         }
+    }
+}
+
+//parametrage des flexbox des 2 groupes des cartes
+.accueil__restaurant__card__grp {
+    display: flex;
+    flex-direction: column;
+    @include m.pc-screen {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    
     }
 }

@@ -4,7 +4,8 @@
   "description": "3eme projet Openclassrooms - site mobile d'un nouveau restaurant",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./assets/scss/main.scss:./assets/css/style.css"
+    "sass": "sass --watch ./assets/scss/main.scss:./assets/css/style.css",
+    "prefix": "postcss ./assets/css/style.css --use autoprefixer -d ./assets/css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "Adel ZARAT",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/tempDz/Ohmyfood/issues"
   },
