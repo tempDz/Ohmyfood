@@ -116,7 +116,6 @@ a {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   margin: -4rem auto 3rem auto;
-  max-width: 1300px;
 }
 .page-menu__photo {
   position: relative;
@@ -135,12 +134,10 @@ a {
   padding: 3rem 2rem 2rem 1rem;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1160px) {
   .menu-grp {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
-    margin: 0;
   }
 }
 
@@ -149,9 +146,13 @@ a {
   flex-direction: column;
   margin: 0 1rem 1.25rem 1rem;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1160px) {
   .menu {
-    max-width: 400px;
+    margin: 0 0.3rem 1.25rem 0.3rem;
+    flex: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 }
 .menu h3 {
@@ -343,7 +344,7 @@ a {
   flex-direction: column;
   padding: 1rem;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1160px) {
   .accueil__restaurant {
     align-items: center;
   }
@@ -362,7 +363,7 @@ a {
   margin-bottom: 1.5rem;
   box-shadow: 8px 8px 16px #cacaca, -8px -8px 16px #f6f6f6;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1160px) {
   .accueil__restaurant__card {
     margin: 1rem;
     max-width: 620px;
@@ -430,7 +431,7 @@ a {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1160px) {
   .accueil__restaurant__card__grp {
     flex-direction: row;
     justify-content: center;

@@ -9,7 +9,6 @@
     background-color: v.$grey-color;
     border-radius: 40px 40px 0 0;
     margin: -4rem auto 3rem auto;
-    max-width: 1300px;
 
 &__photo {
     position: relative;
@@ -34,8 +33,6 @@
     @include m.pc-screen {
         display: flex;
         justify-content: space-evenly;
-    width: 100%;
-    margin: 0;
     }
 }
 //menu (entrées, plats et desserts)==========
@@ -44,7 +41,11 @@
     flex-direction: column;
     margin: 0 1rem 1.25rem 1rem;
     @include m.pc-screen {
-        max-width: 400px;
+        margin: 0 0.3rem 1.25rem 0.3rem;
+        flex: 1;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     & h3 {
         font-weight: t.$Light;
