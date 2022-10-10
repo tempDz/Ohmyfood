@@ -151,7 +151,7 @@ a {
 }
 @media screen and (min-width: 960px) {
   .menu {
-    width: 400px;
+    max-width: 400px;
   }
 }
 .menu h3 {

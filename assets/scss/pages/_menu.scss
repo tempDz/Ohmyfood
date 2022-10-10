@@ -44,7 +44,7 @@
     flex-direction: column;
     margin: 0 1rem 1.25rem 1rem;
     @include m.pc-screen {
-        width: 400px;
+        max-width: 400px;
     }
     & h3 {
         font-weight: t.$Light;
