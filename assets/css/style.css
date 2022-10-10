@@ -388,7 +388,7 @@ a {
   transition-duration: 0.5s;
   line-height: 30px;
   background: linear-gradient(174deg, #ff79da 0%, #9356dc 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .accueil__restaurant__card__texte__heart i:nth-child(2) {
@@ -400,6 +400,9 @@ a {
   transition-duration: 0.5s;
   transform: scale(1);
   line-height: 30px;
+  background: linear-gradient(174deg, #ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .accueil__restaurant__card__texte__heart:hover i:nth-child(2) {
   position: absolute;
