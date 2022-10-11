@@ -10,8 +10,7 @@
 
 //reglage pour box shadow dans header==============================================
 .logo {
-    position: relative;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+@include m.shadow
 }
 
 //mise en page du haut de l'accueil================================================
@@ -27,6 +26,10 @@
         align-items: center;
         justify-content: center;
         padding: 1.5rem 0;
+        
+        @include m.pc-screen {
+            background-color: v.$white-color;
+                    }
 
         & i {
             padding-right: 1.5rem;
@@ -42,7 +45,9 @@
         background-color: v.$grey-color4;
         text-align: center;
         padding: 2rem;
-
+        @include m.pc-screen {
+background-color: v.$white-color;
+        }
 
         & p {
             padding-top: 1.5rem;
@@ -57,6 +62,10 @@
         & h2 {
             padding-top: 2rem;
             margin-bottom: 2rem;
+            @include m.pc-screen {
+                padding: 0;
+                margin-left: 20%;
+            }
         }
 
         //pamametre des cartes fonctionnement==========
@@ -69,6 +78,9 @@
             border-radius: 20px;
             background: v.$grey-color;
             box-shadow: v.$box-shadow2;
+            @include m.pc-screen {
+                max-width: 65%;
+            }
 
             &:nth-child(4) {
                 background-color: lighten(v.$violet-color, 30%);
@@ -105,6 +117,7 @@
         display: flex;
         flex-direction: column;
         padding: 1rem;
+
         @include m.pc-screen {
             align-items: center;
         }
@@ -124,6 +137,7 @@
             background-color: v.$white-color;
             margin-bottom: 1.5rem;
             box-shadow: v.$box-shadow2;
+
             @include m.pc-screen {
                 margin: 1rem;
                 max-width: 620px;
@@ -172,6 +186,7 @@
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                     }
+
                     & i:nth-child(2) {
                         position: absolute;
                         transition-duration: 0.5s;
@@ -200,14 +215,37 @@
     }
 }
 
+//parametrage des flexbox de localisation et fonctionnement
+.haut-accueil-grp {
+    @include m.pc-screen {
+        display: flex;
+
+        justify-content: space-around;
+    }
+}
+
+.localisation-grp {
+    @include m.pc-screen {
+        flex-basis: 50%;
+        background-color: v.$white-color;
+    }
+}
+
+.accueil__fonctionnement {
+    @include m.pc-screen {
+        flex-basis: 50%;
+    }
+}
+
 //parametrage des flexbox des 2 groupes des cartes
 .accueil__restaurant__card__grp {
     display: flex;
     flex-direction: column;
+
     @include m.pc-screen {
         flex-direction: row;
         justify-content: center;
         width: 100%;
-    
+
     }
 }

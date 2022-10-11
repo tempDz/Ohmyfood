@@ -27,6 +27,14 @@
     align-items: center;
     justify-content: space-between;
     padding: 3rem 2rem 2rem 1rem;
+    @include m.pc-screen {
+        justify-content: flex-start;
+    }
+&__title {
+    @include m.pc-screen {
+        padding-right: 2rem;
+    }
+}
 }
 //parametrage de menu-grp pour breakpoint écran pc==========
 .menu-grp {
@@ -41,7 +49,7 @@
     flex-direction: column;
     margin: 0 1rem 1.25rem 1rem;
     @include m.pc-screen {
-        margin: 0 0.3rem 1.25rem 0.3rem;
+        // margin: 0 0.3rem 1.25rem 0.3rem;
         flex: 1;
         white-space: nowrap;
         text-overflow: ellipsis;

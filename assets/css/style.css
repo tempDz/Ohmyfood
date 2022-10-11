@@ -133,6 +133,16 @@ a {
   justify-content: space-between;
   padding: 3rem 2rem 2rem 1rem;
 }
+@media screen and (min-width: 1160px) {
+  .specialite {
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1160px) {
+  .specialite__title {
+    padding-right: 2rem;
+  }
+}
 
 @media screen and (min-width: 1160px) {
   .menu-grp {
@@ -148,7 +158,6 @@ a {
 }
 @media screen and (min-width: 1160px) {
   .menu {
-    margin: 0 0.3rem 1.25rem 0.3rem;
     flex: 1;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -283,6 +292,11 @@ a {
   justify-content: center;
   padding: 1.5rem 0;
 }
+@media screen and (min-width: 1160px) {
+  .accueil__localisation {
+    background-color: #fff;
+  }
+}
 .accueil__localisation i {
   padding-right: 1.5rem;
 }
@@ -293,6 +307,11 @@ a {
   background-color: #fafafa;
   text-align: center;
   padding: 2rem;
+}
+@media screen and (min-width: 1160px) {
+  .accueil__reservation {
+    background-color: #fff;
+  }
 }
 .accueil__reservation p {
   padding-top: 1.5rem;
@@ -306,6 +325,12 @@ a {
   padding-top: 2rem;
   margin-bottom: 2rem;
 }
+@media screen and (min-width: 1160px) {
+  .accueil__fonctionnement h2 {
+    padding: 0;
+    margin-left: 20%;
+  }
+}
 .accueil__fonctionnement__card {
   height: auto;
   display: flex;
@@ -315,6 +340,11 @@ a {
   border-radius: 20px;
   background: #f6f6f6;
   box-shadow: 8px 8px 16px #cacaca, -8px -8px 16px #f6f6f6;
+}
+@media screen and (min-width: 1160px) {
+  .accueil__fonctionnement__card {
+    max-width: 65%;
+  }
 }
 .accueil__fonctionnement__card:nth-child(4) {
   background-color: #e4d5f6;
@@ -427,6 +457,26 @@ a {
   transform: scale(0);
 }
 
+@media screen and (min-width: 1160px) {
+  .haut-accueil-grp {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1160px) {
+  .localisation-grp {
+    flex-basis: 50%;
+    background-color: #fff;
+  }
+}
+
+@media screen and (min-width: 1160px) {
+  .accueil__fonctionnement {
+    flex-basis: 50%;
+  }
+}
+
 .accueil__restaurant__card__grp {
   display: flex;
   flex-direction: column;
@@ -447,7 +497,14 @@ a {
   background-color: #353535;
   height: auto;
   padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
+  padding-bottom: 2rem;
+}
+@media screen and (min-width: 1160px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .footer > h4 {
   margin: 1rem 0 1rem 1rem;
@@ -461,6 +518,11 @@ a {
   padding: 0.3rem 0;
   list-style-type: none;
   margin-left: 1rem;
+}
+@media screen and (min-width: 1160px) {
+  .footer li {
+    display: inline;
+  }
 }
 .footer__ul i {
   width: 1.7rem;
