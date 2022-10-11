@@ -550,7 +550,6 @@ a {
   animation: loader 0.7s ease 0s 1 normal none;
 }
 .loader__titre__lettre {
-  counter-reset: #FF79DA;
   animation: anim-titre 1.2s linear infinite;
   padding-bottom: 2rem;
 }

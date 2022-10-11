@@ -24,7 +24,6 @@
         animation: loader 0.7s ease 0s 1 normal none;
 
         &__lettre {
-            counter-reset: v.$pink-color;
             animation: anim-titre 1.2s linear infinite;
             padding-bottom: 2rem;
         }
