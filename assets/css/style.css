@@ -121,7 +121,7 @@ a {
   position: relative;
   width: 100%;
   max-width: 100%;
-  max-height: 656px;
+  max-height: 500px;
   object-fit: cover;
   margin: 0;
   z-index: -1;
@@ -303,6 +303,14 @@ a {
 .accueil__localisation h3 {
   font-size: 1rem;
 }
+@media screen and (min-width: 1160px) {
+  .accueil__localisation h3 {
+    background-color: #f6f6f6;
+    box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.45) inset, 20px 0 10px -20px rgba(80, 80, 80, 0.45) inset;
+    border-radius: 20px;
+    padding: 1rem 5rem;
+  }
+}
 .accueil__reservation {
   background-color: #fafafa;
   text-align: center;
@@ -311,6 +319,7 @@ a {
 @media screen and (min-width: 1160px) {
   .accueil__reservation {
     background-color: #fff;
+    text-align: center;
   }
 }
 .accueil__reservation p {

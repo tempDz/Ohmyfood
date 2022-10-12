@@ -10,7 +10,7 @@
 
 //reglage pour box shadow dans header==============================================
 .logo {
-@include m.shadow
+    @include m.shadow
 }
 
 //mise en page du haut de l'accueil================================================
@@ -26,10 +26,10 @@
         align-items: center;
         justify-content: center;
         padding: 1.5rem 0;
-        
+
         @include m.pc-screen {
             background-color: v.$white-color;
-                    }
+        }
 
         & i {
             padding-right: 1.5rem;
@@ -37,6 +37,13 @@
 
         & h3 {
             font-size: 1rem;
+
+            @include m.pc-screen {
+                background-color: v.$grey-color;
+                box-shadow: v.$box-shadow-localisation;
+                border-radius: 20px;
+                padding: 1rem 5rem;
+            }
         }
     }
 
@@ -45,8 +52,10 @@
         background-color: v.$grey-color4;
         text-align: center;
         padding: 2rem;
+
         @include m.pc-screen {
-background-color: v.$white-color;
+            background-color: v.$white-color;
+            text-align: center;
         }
 
         & p {
@@ -62,6 +71,7 @@ background-color: v.$white-color;
         & h2 {
             padding-top: 2rem;
             margin-bottom: 2rem;
+
             @include m.pc-screen {
                 padding: 0;
                 margin-left: 20%;
@@ -78,6 +88,7 @@ background-color: v.$white-color;
             border-radius: 20px;
             background: v.$grey-color;
             box-shadow: v.$box-shadow2;
+
             @include m.pc-screen {
                 max-width: 65%;
             }
