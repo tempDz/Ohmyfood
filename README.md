@@ -2,6 +2,8 @@
 
 Troisième projet du parcours "Développeur web" chez OpenClassroom. L'objectif d'intégrer puis de dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass
 
+## Tester le projet : https://tempdz.github.io/Ohmyfood/
+
 ## Objectifs
 
 1. Développer un site proposant le menu de 4 grands restaurants parisiens.
@@ -53,6 +55,3 @@ Troisième projet du parcours "Développeur web" chez OpenClassroom. L'objectif 
 - Validation W3C HTML : à passer, warning autorisés
 - Validation W3C CSS : à passer, warning autorisés
 - Compatibilité : Dernières versions de Chrome, Firefox & Safari
-
-
-## Tester le projet : https://tempdz.github.io/Ohmyfood/
