@@ -55,6 +55,4 @@ Troisième projet du parcours "Développeur web" chez OpenClassroom. L'objectif 
 - Compatibilité : Dernières versions de Chrome, Firefox & Safari
 
 
-## Tester le projet
-
-Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : (https://tempdz.github.io/Ohmyfood/)
+## Tester le projet : (https://tempdz.github.io/Ohmyfood/)
