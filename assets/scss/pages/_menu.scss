@@ -28,7 +28,7 @@
     justify-content: space-between;
     padding: 3rem 2rem 2rem 1rem;
     @include m.pc-screen {
-        justify-content: flex-start;
+        justify-content: center;
     }
 &__title {
     @include m.pc-screen {
