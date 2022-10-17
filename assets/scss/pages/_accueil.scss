@@ -190,7 +190,7 @@
                     //le coeur plein est transparent=====================
                     & i:nth-child(1) {
                         line-height: 0;
-                        transform: scale(0);
+                        opacity: 0;
                         transition-duration: 0.5s;
                         line-height: 30px;
                         background: linear-gradient(174deg, #ff79da 0%, #9356dc 100%);
@@ -201,13 +201,13 @@
                     & i:nth-child(2) {
                         position: absolute;
                         transition-duration: 0.5s;
-                        transform: scale(1);
+                        opacity: 1;
                     }
 
                     //le coeur le plein apparait avec la couleur=========
                     &:hover i:nth-child(1) {
                         transition-duration: 0.5s;
-                        transform: scale(1);
+                        opacity: 1;
                         line-height: 30px;
                         background: linear-gradient(174deg, #ff79da 0%, #9356dc 100%);
                         -webkit-background-clip: text;
@@ -218,7 +218,7 @@
                     &:hover i:nth-child(2) {
                         position: absolute;
                         transition-duration: 0.5s;
-                        transform: scale(0);
+                        opacity: 0;
                     }
                 }
             }
